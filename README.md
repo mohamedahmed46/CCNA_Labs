@@ -1,2 +1,2 @@
 # CCNA_Labs
-lab of ccna 200-301
+labs of ccna 200-301

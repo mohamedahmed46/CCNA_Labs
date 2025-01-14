@@ -3,9 +3,9 @@
 
 ## Router1
 
-int f0/1
-no shutdown
-ip address 200.200.200.1 255.255.255.0
+- int f0/1
+- no shutdown
+- ip address 200.200.200.1 255.255.255.0
 ip dhcp pool 200
 network 200.200.200.0 255.255.255.0
 default-router 200.200.200.1

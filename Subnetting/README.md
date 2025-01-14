@@ -10,7 +10,8 @@
 - 255                      .255                                .255                            .0
 - 11111111            .11111111                      .11111111                  .00000000
 
-## num_of_Network             N =  2^#of_ones
+## num_of_Network       
+- N =  2^#of_ones
 
 - N = 2^2 = 4
 
@@ -20,7 +21,8 @@
 
 - 255.255.255.192      >>>>>>>>  new mask 
 
-## num_of_host                   H = 2^#of_zero -2 
+## num_of_host             
+- H = 2^#of_zero -2 
 
 - H = 2^6 – 2 = 64 -2 = 62 host
 

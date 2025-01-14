@@ -1,4 +1,4 @@
-# ip route destination_network  it's_mask next_hop
+# ip route dest_network mask next_hop
 
 
 ## Router1

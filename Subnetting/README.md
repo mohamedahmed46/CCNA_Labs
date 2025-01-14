@@ -1,8 +1,8 @@
-# Create 4 networks  
+# Create 4 networks from
 
 - 192.168.1.0
 - 255.255.255.0
-- apply subnetting 
+## apply subnetting 
 
 ## first convert mask to binary 
 

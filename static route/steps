@@ -1,5 +1,6 @@
 # ip route destination_network  it's_mask next_hop
 
+
 ## Router1
 int f0/1
 no shutdown

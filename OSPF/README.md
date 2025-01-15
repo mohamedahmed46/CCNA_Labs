@@ -32,6 +32,11 @@ int f0/0
 - network 200.200.200.0 255.255.255.0
 - default-router 200.200.200.1
 - exit
+  ### config acl
+- access-list 100 deny tcp host 200.200.200.3 host 192.168.1.5 eq 80
+- access-list 100 permit ip any any
+- int f0/0
+- ip access-group 100 in 
 - int f0/1
 - no shutdown
 - ip address 15.0.0.2 255.0.0.0

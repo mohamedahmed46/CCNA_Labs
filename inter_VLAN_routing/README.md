@@ -1,1 +1,48 @@
+## switch
+- vlan 2
+- name HR 
+- int range f0/3-4
+- switchport access vlan 2
+- exit
+- vlan 3
+- name sales
+- int range f0/5-6
+- switchport access vlan 3
+- exit
+- vlan 4
+- name acc
+- int range f0/7-8
+- switchport access vlan 4
+- exit
+- vlan 5
+- name server 
+- int range f0/1-2
+- switchport access vlan 5
+
+## router
+- int g0/0/0.1
+- no shutdown
+- encapsulation dot1Q 2   
+- ip address 200.200.202.1 255.255.255.0
+- int g0/0/0.2
+- no shutdown
+- encapsulation dot1Q 3   
+- ip address 200.200.203.1 255.255.255.0
+- int g0/0/0.3
+- no shutdown
+- encapsulation dot1Q 4   
+- ip address 200.200.204.1 255.255.255.0
+- int g0/0/0.4
+- no shutdown
+- encapsulation dot1Q 5   
+- ip address 200.200.201.1 255.255.255.0
+- exit
+- ip dhcp pool hr
+- network 200.200.202.0 255.255.255.0
+- exit
+- ip dhcp pool sales
+- network 200.200.203.0 255.255.255.0
+- exit
+- ip dhcp pool acc
+- network 200.200.204.0 255.255.255.0
 

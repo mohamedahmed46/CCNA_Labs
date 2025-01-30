@@ -72,16 +72,16 @@
 - network 120.36.21.0 0.255.255.255 area 0
 - network 13.0.0.0 0.255.255.255 area 0
 
-  ## router 7
-  - int f0/1
-  - no shutdown
-  - ip address 101.25.54.1 255.0.0.0
-  - exit
-  - int f0/0
-  - no shutdown
-  - ip address 14.0.0.1 255.0.0.0
-  - exit
-  - router ospf 1
-  - network 101.25.54.0 0.255.255.255 area 0
-  - network 14.0.0.0 0.255.255.255 area 0
-  - do wr 
+## router 7
+- int f0/1
+- no shutdown
+- ip address 101.25.54.1 255.0.0.0
+- exit
+- int f0/0
+- no shutdown
+- ip address 14.0.0.1 255.0.0.0
+- exit
+- router ospf 1
+- network 101.25.54.0 0.255.255.255 area 0
+- network 14.0.0.0 0.255.255.255 area 0
+- do wr 
